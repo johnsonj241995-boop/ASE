@@ -1,0 +1,25 @@
+package
+{
+    import ExampleEvent = com.example.events.Event;
+    import RoyaleEvent = org.apache.royale.events.Event;
+
+    public class MyClass
+    {
+        public function MyClass()
+        {
+            addEventListener(RoyaleEvent.CHANGE, onRoyaleEvent);
+            addEventListener(ExampleEvent.EXAMPLE, onExampleEvent);
+        }
+
+        public function onRoyaleEvent(event:RoyaleEvent):void
+        {
+
+        }
+
+        public function onExampleEvent(event:ExampleEvent):void
+        {
+
+        }
+   
+    }
+}
